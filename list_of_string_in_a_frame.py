@@ -21,11 +21,11 @@ def find_longest_word_size(s_list):
 
 
 def putting_in_a_frame(s_list):
-    for i in range(len(s_list)+1):
-        if i == 0 or i == len(s_list):
+    for i in range(len(s_list)+2):
+        if i == 0 or i == len(s_list) +1:
             print '*'*(sz+4)
         else:
-            print('* ' + s_list[i] + ' '*(sz + 1 -len(s_list[i])) + '*'  )
+            print('* ' + s_list[i-1] + ' '*(sz + 1 -len(s_list[i-1])) + '*'  )
 
 
 
